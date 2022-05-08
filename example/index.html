@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js" defer></script>
+<script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('./serviceWorker.js')
+                .then(function (registration) {
+                    fetch('/api/shit')
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                })
+                .catch(function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+        });
+    }
+
+    fetch('/api/shit')
+        .catch(e => {
+            console.error(e)
+        })
+</script>
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+{"version":3,"file":"src_bootstrap_js.1f0230.js","mappings":";;;;;;;;;;;;AAAA;AACAC,OAAO,CAACC,GAAR,CAAY,OAAZ,EAAqBF,8CAArB","sources":["webpack://consume/./src/bootstrap.js"],"sourcesContent":["import React from 'react'\nconsole.log('react', React)"],"names":["React","console","log"],"sourceRoot":""}

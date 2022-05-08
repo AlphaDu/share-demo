@@ -1,0 +1,15 @@
+{
+  "name": "share2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc webpack.config.ts && webpack -c webpack.config.js --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "16"
+  }
+}

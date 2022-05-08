@@ -1,0 +1,26 @@
+{
+  "name": "consume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build && tsc webpack.config.ts && webpack -c webpack.config.js --mode development",
+    "s": "yarn build && serve build -p 3001"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "serve": "^13.0.2",
+    "sharedrequireplugin": "^2.0.5",
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2",
+    "webpack-cli": "^4.9.2"
+  }
+}
